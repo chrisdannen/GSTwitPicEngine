@@ -37,7 +37,7 @@
 
 
 - (GSTwitPicEngine *)initWithDelegate:(NSObject *)delegate {
-  if (self = [super init]) {
+  if ((self = [super init])) {
     _delegate = delegate;
     _queue = [[ASINetworkQueue alloc] init];
     [_queue setMaxConcurrentOperationCount:1];
